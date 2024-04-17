@@ -53,7 +53,7 @@ echo ""
 echo ""
 echo "***  Currently Running System Processes  ***"
 echo "---------------------------------------------------------------------------"
-top
+top -n 1
 echo ""
 
 echo ""
