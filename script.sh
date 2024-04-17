@@ -25,3 +25,15 @@ echo "***  System Information  ***"
 echo "-----------------------------------------------------"
 uname -a
 echo ""
+
+echo ""
+echo "***  System's Uptime / Logged In Users  ***"
+echo "-----------------------------------------------------"
+uptime
+echo ""
+
+echo ""
+echo "***  Current User  ***"
+echo "-----------------------------------------------------"
+whoami
+echo ""
