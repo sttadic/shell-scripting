@@ -53,11 +53,11 @@ echo ""
 echo ""
 echo "***  Currently Running System Processes  ***"
 echo "---------------------------------------------------------------------------"
-top -n 1
+top -b -n 1
 echo ""
 
 echo ""
 echo "***  History of Commands  ***"
 echo "---------------------------------------------------------------------------"
-history
+cat ~/.bash_history
 echo ""
