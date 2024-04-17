@@ -1,0 +1,435 @@
+
+		[0;31m***  Current Date and Time ***
+---------------------------------------------------------------------------[0m
+17 Apr 2024 23:15:46
+
+
+		[0;31m***  System's Host Name  ***
+---------------------------------------------------------------------------[0m
+StjepanTadicCATC
+
+
+		[0;31m***  Architecture Name  ***
+---------------------------------------------------------------------------[0m
+x86_64
+
+
+		[0;31m***  System Information  ***
+---------------------------------------------------------------------------[0m
+Linux StjepanTadicCATC 5.15.0-1060-azure #69~20.04.1-Ubuntu SMP Tue Mar 19 22:14:45 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+
+		[0;31m***  System's Uptime / Number of Users  ***
+---------------------------------------------------------------------------[0m
+ 23:15:46 up  2:49,  1 user,  load average: 0.02, 0.01, 0.00
+
+
+		[0;31m***  Current User  ***
+---------------------------------------------------------------------------[0m
+stjepantadic
+
+
+		[0;31m***  Logged In Users  ***
+---------------------------------------------------------------------------[0m
+stjepantadic pts/0        2024-04-17 23:15 (37.228.203.205)
+
+
+		[0;31m***  Logged In Users and Their Processes  ***
+---------------------------------------------------------------------------[0m
+ 23:15:46 up  2:49,  1 user,  load average: 0.02, 0.01, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+stjepant pts/0    37.228.203.205   23:15    0.00s  0.03s  0.00s w
+
+
+		[0;31m***  Currently Running System Processes  ***
+---------------------------------------------------------------------------[0m
+top - 23:15:46 up  2:49,  1 user,  load average: 0.02, 0.01, 0.00
+Tasks: 101 total,   1 running, 100 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.2 us,  0.0 sy,  0.0 ni, 93.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    844.0 total,    269.7 free,    226.0 used,    348.3 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    474.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  103952  12944   8500 S   0.0   1.5   0:04.09 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.44 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.60 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.06 migration/0
+     16 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/0:1-events
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     19 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     23 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.38 kcompactd0
+     25 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     26 root      39  19       0      0      0 S   0.0   0.0   0:00.17 khugepaged
+     72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     73 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_vmbus_con
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_pri_chan
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_sub_chan
+     82 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     83 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
+     85 root       0 -20       0      0      0 I   0.0   0.0   0:00.12 kworker/0:1H-kblockd
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kswapd0
+     88 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthrea
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nfit
+     92 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_0
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     95 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-reset-wq
+     96 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_1
+     97 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+     98 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-delete-wq
+     99 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    100 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 vfio-irqfd-clea
+    103 root      20   0       0      0      0 S   0.0   0.0   0:00.26 hv_balloon
+    104 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+    114 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    117 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+    118 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    125 root      20   0       0      0      0 S   0.0   0.0   0:00.25 jbd2/sda1-8
+    126 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    165 root      19  -1   60344  20292  19200 S   0.0   2.3   0:00.58 systemd-journal
+    204 root      20   0   20108   5940   4064 S   0.0   0.7   0:00.15 systemd-udevd
+    223 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    255 root      20   0    2496    576    512 S   0.0   0.1   0:00.00 bpfilter_umh
+    296 root      20   0    4004   2848   1892 S   0.0   0.3   0:05.58 hv_kvp_daemon
+    402 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    403 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_rdacd
+    404 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    405 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_handlerd
+    406 root      rt   0  280328  18136   8212 S   0.0   2.1   0:00.82 multipathd
+    451 root      20   0       0      0      0 I   0.0   0.0   0:04.71 kworker/0:3-events
+    511 systemd+  20   0   27416   7608   6744 S   0.0   0.9   0:00.04 systemd-network
+    513 systemd+  20   0   24696  12304   8240 S   0.0   1.4   0:00.08 systemd-resolve
+    597 root      20   0       0      0      0 S   0.0   0.0   0:00.00 jbd2/sdb1-8
+    599 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    631 root      20   0  241052   9244   8292 S   0.0   1.1   0:00.25 accounts-daemon
+    639 root      20   0    8548   2800   2584 S   0.0   0.3   0:00.00 cron
+    640 message+  20   0    7584   4840   4044 S   0.0   0.6   0:00.08 dbus-daemon
+    646 _chrony   20   0    4828   2588   2264 S   0.0   0.3   0:02.86 chronyd
+    648 _chrony   20   0    4696    196      0 S   0.0   0.0   0:00.00 chronyd
+    653 root      20   0   29852  18336  10276 S   0.0   2.1   0:00.10 networkd-dispat
+    654 root      20   0  236436   9244   8328 S   0.0   1.1   0:00.01 polkitd
+    655 syslog    20   0  224500   6896   3864 S   0.0   0.8   0:00.05 rsyslogd
+    662 root      20   0 1245304  38328  18508 S   0.0   4.4   0:01.60 snapd
+    664 root      20   0   17508   7748   6856 S   0.0   0.9   0:00.08 systemd-logind
+    671 root      20   0  395652  15992  11972 S   0.0   1.9   0:00.06 udisksd
+    672 root      20   0   28784  21072   8844 S   0.0   2.4   0:00.34 python3
+    674 daemon    20   0    3804   2404   2228 S   0.0   0.3   0:00.00 atd
+    688 root      20   0  245104  13184  11296 S   0.0   1.5   0:00.08 ModemManager
+    692 root      20   0    7360   2412   2284 S   0.0   0.3   0:00.01 agetty
+    701 root      20   0    5836   1724   1612 S   0.0   0.2   0:00.15 agetty
+    735 root      20   0  108120  20792  13108 S   0.0   2.4   0:00.08 unattended-upgr
+    737 root      20   0   12196   7404   6472 S   0.0   0.9   0:00.06 sshd
+    753 root      20   0  402268  32660  10604 S   0.0   3.8   0:10.14 python3
+   1947 root      20   0       0      0      0 I   0.0   0.0   0:00.15 kworker/u2:0-events_power_efficient
+   2108 root      20   0       0      0      0 I   0.0   0.0   0:00.03 kworker/u2:2-events_unbound
+   2174 root      20   0   13812   8888   7448 S   0.0   1.0   0:00.01 sshd
+   2177 stjepan+  20   0   19076   9492   7956 S   0.0   1.1   0:00.07 systemd
+   2178 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/u2:1-events_unbound
+   2179 stjepan+  20   0  105168   4608     20 S   0.0   0.5   0:00.00 (sd-pam)
+   2294 stjepan+  20   0   13952   6060   4588 S   0.0   0.7   0:00.00 sshd
+   2295 stjepan+  20   0   10172   5188   3392 S   0.0   0.6   0:00.03 bash
+   2309 stjepan+  20   0    8756   3600   3152 S   0.0   0.4   0:00.00 script.sh
+   2319 stjepan+  20   0   10876   3612   3152 R   0.0   0.4   0:00.00 top
+
+
+		[0;31m***  History of Commands  ***
+---------------------------------------------------------------------------[0m
+ls
+mkdir Music
+mkdir Movies
+mkdir Documents
+ls
+cd music
+cd Music/
+ls
+pwd
+cd ..
+ls -l
+cd Movies/
+~
+cd ~
+.
+cd .
+tree
+sudo apt install tree
+apt install tree
+snap install tree
+tree
+sudo apt install tree
+sudo apt update
+sudo apt install tree
+tree
+cd ..
+ls
+cd ..
+ls
+cd home
+cd stjepantadic/
+ls
+cd M
+cd Music/
+ls
+mkdir GunsNRoses
+cd GunsNRoses/
+mkdir AppetiteForDestruction
+mkdir UseYourIllusionI
+cd ..
+mkdir OfMonstersAndMen
+cd OfMonstersAndMen/
+mkdir MyHeadIsAnAnimal
+mkdir BeneathTheSkin
+cd ..
+mkdir Whitesnake
+cd Whitesnake/
+mkdir SlideItIn
+mkdir Whitesnake
+cd ..
+tree
+cd ..
+tree
+history
+exit
+ls
+mkdir project
+ls
+cd project/
+ls
+git clone https://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@github.com/sttadic/StjepanTadicCATCProject.git
+ls
+cd StjepanTadicCATCProject/
+ls
+vim script.sh
+ls
+cat script.sh 
+echo $SHELL
+cat /etc/os-release
+ls
+git log
+git status
+git add script.sh 
+git commit -m "Created a script file 'script.sh' and added shebang into it"
+git config --global user.email stjepan.tadich@gmail.com
+git config --global user.name sttadic
+git commit -m "Created a script file 'script.sh' and added shebang into it"
+ls
+git status
+git push
+git status
+vim script.sh 
+./script.sh
+chmod u:x script.sh
+chmod 722 script.sh
+ls -l
+chmod 744 script.sh
+ls -l
+./script.sh 
+man date
+cat script.sh 
+vim script.sh 
+./script.sh 
+vim script.sh 
+./script.sh 
+vim script.sh 
+./script.sh 
+vim script.sh 
+./script.sh 
+vim script.sh 
+git status
+git add script.sh 
+git commit -m "Added functionality to a script to display the date and time in dd mm yy format and to print hostname. Used a couple of echo commands for formatting"
+git push
+git log
+vim script.sh 
+./script.sh 
+ls
+cat stjepanTadic.txt 
+git status
+git add script.sh 
+git commit -m "Output redirection to a text file added for each line"
+ls
+vim script.sh 
+git status
+rm stjepanTadic.txt 
+git status
+git commit -am "Additional two commands added to a script: arch and uname. Changed some formatting of echo commands for headings"
+git status
+git push
+./script.sh 
+cat stjepanTadic.txt 
+vim stjepanTadic.txt 
+ls
+rm stjepanTadic.txt 
+vim script.sh 
+ls
+./script.sh 
+ls
+cat stjepanTadic.txt 
+ls
+rm stjepanTadic.txt 
+ls
+git status
+git commit -am "Removed output redirection from each line. Instead I used exec command at the beginning of script to automatically redirect output of all subsequent commands to a text file"
+git push
+uptime
+whoami
+vim script.sh 
+ls
+./script.sh 
+ls
+cat stjepanTadic.txt 
+ls
+rm stjepanTadic.txt 
+ls
+git commit -am "Commands uptime and whoami are added into a script"
+ls
+git status
+git push
+git status
+exit
+history
+ls
+cd project/
+ls
+cd StjepanTadicCATCProject/
+ls
+vim script.sh 
+man who
+man w
+vim script.sh 
+clear
+ls
+./script.sh 
+ls
+cat stjepanTadic.txt 
+vim script.sh 
+git status
+git add script.sh 
+git commit -m "who, w and top commands added to a script, some minor cosmetic changes"
+ls
+git log
+vim script.sh 
+rm stjepanTadic.txt 
+./script.sh 
+ls
+cat stjepanTadic.txt 
+history
+vim script.sh 
+git add script.sh 
+git commit -m "Added history command into a script. Additional cosmetic changes done to the output of the echo commands."
+git push
+git status
+ls
+vim script.sh 
+ls
+rm stjepanTadic.txt 
+./script.sh 
+cat stjepanTadic.txt 
+rm stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+ls
+cat stjepanTadic1.txt 
+ls
+git reset --hard
+ls
+vem script.sh 
+vim script.sh 
+rm stjepanTadic1.txt 
+rm stjepanTadic.txt 
+ls
+man top
+top --help
+ls
+vim script.sh 
+./script.sh 
+ls
+cat stjepanTadic.txt 
+top -n 1
+top -b -n 1
+man top
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+git add script.sh 
+git commit -m "Added -n 1 flag to the top command to stop it automatically after one iteration"
+history
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+ls
+git status
+vim script.sh 
+rm stjepanTadic.txt 
+./script.sh 
+cat stjepanTadic.txt 
+git add script.sh 
+git commit -m "Added -b flag to the 'top' command to run in a batch mode. Also, since history command doesn't work in non-interactive mode, I implemented history output by using a command 'cat ~/.bash_history' which reads the content of .bash_history file"
+git push
+ls
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+history
+cat stjepanTadic.txt 
+vim script.sh 
+git add script.sh 
+git commit -m "Changed the output colour of the echo command for the headings"
+git push
+cat stjepanTadic.txt 
+git status
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+vim script.sh 
+./script.sh 
+cat stjepanTadic.txt 
+rm stjepanTadic.txt 
+ls
+vim script.sh 
+exit
+
