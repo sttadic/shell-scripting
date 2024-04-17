@@ -27,7 +27,7 @@ uname -a
 echo ""
 
 echo ""
-echo "***  System's Uptime / Logged In Users  ***"
+echo "***  System's Uptime / Number of Users  ***"
 echo "-----------------------------------------------------"
 uptime
 echo ""
@@ -36,4 +36,22 @@ echo ""
 echo "***  Current User  ***"
 echo "-----------------------------------------------------"
 whoami
+echo ""
+
+echo ""
+echo "***  Logged In Users  ***"
+echo "-----------------------------------------------------"
+who
+echo ""
+
+echo ""
+echo "*** Logged In Users and Their Processes  ***"
+echo "-----------------------------------------------------"
+w
+echo ""
+
+echo ""
+echo "***  Currently Running System Processes  ***"
+echo "-----------------------------------------------------"
+top
 echo ""
