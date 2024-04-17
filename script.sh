@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo ""
-echo "Display the current date and time"
-echo "-----------------------------------------------------"
-date | awk '{print $3, $2, $6, $4}'
-echo ""
+echo "" >> stjepanTadic.txt
+echo "Display the current date and time" >> stjepanTadic.txt
+echo "-----------------------------------------------------" >> stjepanTadic.txt
+date | awk '{print $3, $2, $6, $4}' >> stjepanTadic.txt
+echo "" >> stjepanTadic.txt
 
-echo ""
-echo "Print system's host name"
-echo "-----------------------------------------------------"
-hostname
-echo ""
+echo "" >> stjepanTadic.txt
+echo "Print system's host name" >> stjepanTadic.txt
+echo "-----------------------------------------------------" >> stjepanTadic.txt 
+hostname >> stjepanTadic.txt
+echo "" >> stjepanTadic.txt
 
