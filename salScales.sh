@@ -12,8 +12,9 @@ echo ""
 # Do until user enters a valid input
 while true; do
 	read -p "  Starting Salary -> " SALARY
-	# Using regular expressions to check input - must start with a character between 1 and 9, and is followed by zero or more numeric characters
-	if [[ $SALARY =~ ^[1-9][0-9]*$ ]]; then
+	# Using regular expressions to check input - must start with a character between 1 and 9, followed by zero or more numeric characters,
+	# and if user wants to enter number with decimal point, it can be followed by a dot and one or more digits after the dot
+	if [[ $SALARY =~ ^[1-9][0-9]*\.?[0-9]+$|^[0-9]+$ ]]; then
 		break
 	else 
 		echo ""
@@ -38,7 +39,7 @@ echo ""
 
 while true; do
 	read -p "  Salary Increment -> " INCREMENT
-	if [[ $INCREMENT =~ ^[1-9][0-9]*$ ]]; then
+	if [[ $INCREMENT =~ ^[1-9][0-9]*\.?[0-9]+$|^[0-9]+$ ]]; then
 		break
 	else 
 		echo ""
