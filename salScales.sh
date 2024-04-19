@@ -11,7 +11,7 @@ echo ""
 # Read input from a user and perform input validation
 # Do until user enters a valid input
 while true; do
-	read -p "  Starting Salary -> " SALARY
+	read -p "  Starting Salary (€) -> " SALARY
 	# Using regular expressions to check input - must start with a character between 1 and 9, followed by zero or more numeric characters,
 	# and if user wants to enter number with decimal point, it can be followed by a dot and one or more digits after the dot
 	if [[ $SALARY =~ ^[1-9][0-9]*\.?[0-9]+$|^[0-9]+$ ]]; then
@@ -38,7 +38,7 @@ done
 echo ""
 
 while true; do
-	read -p "  Salary Increment -> " INCREMENT
+	read -p "  Salary Increment (€) -> " INCREMENT
 	if [[ $INCREMENT =~ ^[1-9][0-9]*\.?[0-9]+$|^[0-9]+$ ]]; then
 		break
 	else 
@@ -74,8 +74,8 @@ echo -e "|    DATE \t  SALARY   |"
 echo "============================"
 # Iterate points number of times
 for ((i = 1; i <= POINTS; i++)); do
-	# Increase the salary by the amount of increment
-	((SALARY += INCREMENT))
+	# Increase the salary by the amount of increment (use floating point arithmetic)
+	SALARY=$(echo "$SALARY + $INCREMENT" | bc)
 	# Regular employee gets salary increment once in a twelwe months, managers once in a six months
 	if [ "$MANAGER" = "n" ]; then
 		MONTHS_TO_INC=$((i*12))
@@ -85,8 +85,8 @@ for ((i = 1; i <= POINTS; i++)); do
 
 	# Calculate date of next increment and store in the format month yyyy; e.g. Jan 2025
 	NEXT_DATE=$(date -d "$TIME+$MONTHS_TO_INC month" +%b\ %Y)
-
-	echo -e "  $NEXT_DATE   |    $SALARY"
+	# Print result containing string and number with two decimal points
+	printf "  %s   |  \u20AC %.2f\n" "$NEXT_DATE" "$SALARY"
 	echo "----------------------------"	
     	 
 done
