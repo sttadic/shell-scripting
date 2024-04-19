@@ -61,14 +61,16 @@ while true; do
 done
 
 echo ""
-echo "********** SALARY SCALES TABLE **********"
 echo ""
+echo "**** SALARY SCALE TABLE ****"
+echo "|**************************|"
+echo "|                          |"
 
 # Get the current time in the format yyyy-mm-dd
 DATE=$(date +%Y-%m-%d)
 
-echo -e " YEAR \tSALARY SCALE"
-echo "======================="
+echo -e "|    DATE \t  SALARY   |"
+echo "============================"
 # Iterate points number of times
 for ((i = 1; i <= POINTS; i++)); do
 	# Increase the salary by the amount of increment
@@ -82,7 +84,9 @@ for ((i = 1; i <= POINTS; i++)); do
 
 	# Calculate date of next increment and store in the format month yyyy; e.g. Jan 2025
 	NEXT_DATE=$(date -d "$TIME+$MONTHS_TO_INC month" +%b\ %Y)
-	echo "$NEXT_DATE   $SALARY "			 
+
+	echo -e "  $NEXT_DATE   |    $SALARY"
+	echo "----------------------------"	
     	 
 done
 
