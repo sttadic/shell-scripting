@@ -9,16 +9,16 @@ echo "Please enter the following details:"
 echo ""
 
 # Read input from a user and perform input validation
-# Do until user enters a valid input
+# Repeat until user enters a valid input
 while true; do
 	read -p "  Starting Salary (€) -> " SALARY
-	# Using regular expressions to check input - must start with a character between 1 and 9, followed by zero or more numeric characters,
-	# and if user wants to enter number with decimal point, it can be followed by a dot and one or more digits after the dot
+	# Validate input with regular expressions - must start with a character between 1 and 9, followed by zero or more numeric characters,
+	# If user wants to enter a number with a decimal point, then follow by a dot and one or more mandatory digits after the dot
 	if [[ $SALARY =~ ^[1-9][0-9]*\.?[0-9]+$|^[0-9]+$ ]]; then
 		break
 	else 
 		echo ""
-		echo "--- Invalid input! Salary must be a positive numeric value with no separators (Example: 10000) . Please try again ---"
+		echo "--- Invalid input! Salary must be a positive numeric value (Example: 10000 or 10000.00). Please try again ---"
 	fi
 done
 
@@ -31,7 +31,7 @@ while true; do
 		break
 	else 
 		echo ""
-		echo "--- Invalid input! Number of points must be a positive numeric value less than 100 with no separators (Example: 10) . Please try again ---"
+		echo "--- Invalid input! Number of points must be a positive numeric value less than 100 with no separators (Example: 10). Please try again ---"
 	fi
 done
 
@@ -43,7 +43,7 @@ while true; do
 		break
 	else 
 		echo ""
-		echo "--- Invalid input! Salary increment must be a positive numeric value with no separators (Example: 1000) . Please try again ---"
+		echo "--- Invalid input! Salary increment must be a positive numeric value (Example: 1000 or 1000.00). Please try again ---"
 	fi
 done
 
@@ -57,7 +57,7 @@ while true; do
 		break
 	else
 		echo ""
-		echo "--- Invalid input! Please use y for yes or n for no ---"
+		echo "--- Invalid input! Usage: y for yes / n for no ---"
 	fi
 done
 
@@ -85,7 +85,7 @@ for ((i = 1; i <= POINTS; i++)); do
 
 	# Calculate date of next increment and store in the format month yyyy; e.g. Jan 2025
 	NEXT_DATE=$(date -d "$TIME+$MONTHS_TO_INC month" +%b\ %Y)
-	# Print result containing string and number with two decimal points
+	# Print result containing string and a number with two decimal points
 	printf "  %s   |  \u20AC %.2f\n" "$NEXT_DATE" "$SALARY"
 	echo "----------------------------"	
     	 
