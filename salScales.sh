@@ -9,11 +9,11 @@ echo "Please enter the following details:"
 echo ""
 
 # Read input from a user and perform input validation
-# Do while user enters a valid input
+# Do until user enters a valid input
 while true; do
-	read -p "  Starting Salary -> " salary
+	read -p "  Starting Salary -> " SALARY
 	# Using regular expressions to check input - must start with a character between 1 and 9, and is followed by zero or more numeric characters
-	if [[ $salary =~ ^[1-9][0-9]*$ ]]; then
+	if [[ $SALARY =~ ^[1-9][0-9]*$ ]]; then
 		break
 	else 
 		echo ""
@@ -24,9 +24,9 @@ done
 echo ""
 
 while true; do
-	read -p "  Number of Points on Salary Scale -> " points
+	read -p "  Number of Points on a Salary Scale -> " POINTS
 	# regex - input must start with a character between 1 and 9, and is followed by zero or one numeric character (max value allowed is 99)
-	if [[ $points =~ ^[1-9][0-9]?$ ]]; then
+	if [[ $POINTS =~ ^[1-9][0-9]?$ ]]; then
 		break
 	else 
 		echo ""
@@ -37,8 +37,8 @@ done
 echo ""
 
 while true; do
-	read -p "  Salary Increment -> " increment
-	if [[ $increment =~ ^[1-9][0-9]*$ ]]; then
+	read -p "  Salary Increment -> " INCREMENT
+	if [[ $INCREMENT =~ ^[1-9][0-9]*$ ]]; then
 		break
 	else 
 		echo ""
@@ -49,13 +49,31 @@ done
 echo ""
 
 while true; do
-	read -p "  Is the Employee a Manager? (y/n) -> " isManager
-	if [ "$isManager" = "y" ]; then
+	read -p "  Is the Employee a Manager? (y/n) -> " MANAGER
+	if [ "$MANAGER" = "y" ]; then
 		break
-	elif [ "$isManager" = "n" ]; then
+	elif [ "$MANAGER" = "n" ]; then
 		break
 	else
 		echo ""
 		echo "--- Invalid input! Please use y for yes or n for no ---"
 	fi
 done
+
+echo ""
+echo "********** SALARY SCALES TABLE **********"
+echo ""
+
+# Get the current year
+YEAR=$(date +%Y)
+
+if [ "$MANAGER" = "n" ]; then
+echo -e " YEAR \tSALARY SCALE"
+echo "======================="
+	# Iterate points number of times
+	for ((i = 1; i <= POINTS; i++)); do
+		((SALARY += INCREMENT))
+		echo "$((YEAR + i))   $SALARY "			 
+       done
+fi       
+
