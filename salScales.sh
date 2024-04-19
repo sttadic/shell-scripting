@@ -65,16 +65,24 @@ echo "********** SALARY SCALES TABLE **********"
 echo ""
 
 # Get the current time in the format yyyy-mm-dd
-TIME=$(date +%Y-%m-%d)
+DATE=$(date +%Y-%m-%d)
 
-if [ "$MANAGER" = "n" ]; then
 echo -e " YEAR \tSALARY SCALE"
 echo "======================="
-	# Iterate points number of times
-	for ((i = 1; i <= POINTS; i++)); do
-		((SALARY += INCREMENT))
-		n=$((i*12))
-		echo "$(date -d "$TIME+$n month" +%B\ %Y)   $SALARY "			 
-       done
-fi       
+# Iterate points number of times
+for ((i = 1; i <= POINTS; i++)); do
+	# Increase the salary by the amount of increment
+	((SALARY += INCREMENT))
+	# Regular employee gets salary increment once in a twelwe months, managers once in a six months
+	if [ "$MANAGER" = "n" ]; then
+		MONTHS_TO_INC=$((i*12))
+	else
+		MONTHS_TO_INC=$((i*6))
+	fi
+
+	# Calculate date of next increment and store in the format month yyyy; e.g. Jan 2025
+	NEXT_DATE=$(date -d "$TIME+$MONTHS_TO_INC month" +%b\ %Y)
+	echo "$NEXT_DATE   $SALARY "			 
+    	 
+done
 
