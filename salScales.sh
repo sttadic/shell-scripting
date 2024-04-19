@@ -64,8 +64,8 @@ echo ""
 echo "********** SALARY SCALES TABLE **********"
 echo ""
 
-# Get the current year
-YEAR=$(date +%Y)
+# Get the current time in the format yyyy-mm-dd
+TIME=$(date +%Y-%m-%d)
 
 if [ "$MANAGER" = "n" ]; then
 echo -e " YEAR \tSALARY SCALE"
@@ -73,7 +73,8 @@ echo "======================="
 	# Iterate points number of times
 	for ((i = 1; i <= POINTS; i++)); do
 		((SALARY += INCREMENT))
-		echo "$((YEAR + i))   $SALARY "			 
+		n=$((i*12))
+		echo "$(date -d "$TIME+$n month" +%B\ %Y)   $SALARY "			 
        done
 fi       
 
