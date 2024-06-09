@@ -67,8 +67,6 @@ echo "**** SALARY SCALE TABLE ****"
 echo "|**************************|"
 echo "|                          |"
 
-# Get the current time in the format yyyy-mm-dd
-DATE=$(date +%Y-%m-%d)
 
 echo -e "|    DATE \t  SALARY   |"
 echo "============================"
@@ -84,7 +82,7 @@ for ((i = 1; i <= POINTS; i++)); do
 	fi
 
 	# Calculate date of next increment and store in the format month yyyy; e.g. Jan 2025
-	NEXT_DATE=$(date -d "$TIME+$MONTHS_TO_INC month" +%b\ %Y)
+	NEXT_DATE=$(date -d "$MONTHS_TO_INC month" +%b\ %Y)
 	# Print result containing string and a number with two decimal points
 	printf "  %s   |  \u20AC %.2f\n" "$NEXT_DATE" "$SALARY"
 	echo "----------------------------"	
